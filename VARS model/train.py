@@ -127,7 +127,7 @@ def train(dataloader,
         os.mkdir(model_name) 
 
     # path where we will save the results
-    prediction_file = "predicitions_" + set_name + "_epoch_" + str(epoch) + ".json"
+    prediction_file = "predictions_" + set_name + "_epoch_" + str(epoch) + ".json"
     data = {}
     data["Set"] = set_name
 
@@ -228,7 +228,7 @@ def evaluation(dataloader,
 
     model.eval()
 
-    prediction_file = "predicitions_" + set_name + ".json"
+    prediction_file = "predictions_" + set_name + ".json"
     data = {}
     data["Set"] = set_name
 
